@@ -1,20 +1,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #header {
-    background-color: #c1dcf3;
+    background-color: navy;
     padding: 10px 100px;
     text-align: center;
+    box-shadow: 0 8px 6px white;
     position: sticky;
-    box-shadow: 0 8px 6px #f3d2c1;
+    top: 0;
 
+    
+}
 
+.logo img {
+    height: 40px;
+    border-radius: 10px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    background-color: navy;
     
 }
 
@@ -22,12 +30,30 @@ body {
     text-align: center;
 }
 
+.tentang {
+    background-color: #d9d4e7;
+    position: flex;
+    margin-left: 500px;
+    align-content: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    color: navy;
+}
+
+.deskripsi {
+    text-align: justify
+    height: 100px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
 .profil img {
     width: 200px;
     border-radius: 50%;
     text-align: center;
-    border: 3px solid black;
-    margin-top: 45px;
+    border: 3px solid rgb(1, 203, 243);
+    margin-top: 50px;
     
 }
 
@@ -35,17 +61,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(252, 252, 252);
+    background-color: #d9d4e7;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+    color: navy;
     
 }
 
-.galeri h2{
+.galeri h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .galeri img {
@@ -64,10 +92,13 @@ body {
     width: 30%;
     text-align: center;
     color: aliceblue;
-
-    
-
 }
+
+.kartu-aktivitas:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
 
 
 
